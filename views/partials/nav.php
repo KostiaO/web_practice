@@ -1,7 +1,7 @@
 <?php
 
 function manageActive($uri) {
-    $current_uri = $_SERVER["REQUEST_URI"];
+    $current_uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
     $ACTIVE_CLASS_ATTRS =  "bg-gray-900 text-white";
 
@@ -21,9 +21,9 @@ function manageActive($uri) {
         </div>
         <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
-            <a href="/" class="<?= manageActive("/") ?>" aria-current="page">Home</a>
-            <a href="/about.php" class="<?= manageActive("/about.php") ?>">About</a>
-            <a href="/contact.php" class="<?= manageActive("/contact.php") ?>">Contact</a>
+                <a href="/" class="<?= manageActive("/") ?>" aria-current="page">Home</a>
+                <a href="/about" class="<?= manageActive("/about") ?>">About</a>
+                <a href="/contact" class="<?= manageActive("/contact") ?>">Contact</a>
             </div>
         </div>
         </div>
