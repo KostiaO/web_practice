@@ -24,6 +24,7 @@ function manageActive($uri) {
                 <a href="/" class="<?= manageActive("/") ?>" aria-current="page">Home</a>
                 <a href="/about" class="<?= manageActive("/about") ?>">About</a>
                 <a href="/contact" class="<?= manageActive("/contact") ?>">Contact</a>
+                <a href="/notes" class="<?= manageActive("/notes") ?>">Notes</a>
             </div>
         </div>
         </div>
