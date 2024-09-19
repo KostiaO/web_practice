@@ -1,12 +1,13 @@
 <?php
 
+// * Define your config
 return [
     "database" => [
-        "host" => "localhost",
-        "port" => 3306,
-        "dbname" => "myapp",
+        "host" => "",
+        "port" => 0000,
+        "dbname" => "",
         "charset" => "utf8mb4",
-        "username" => "root",
-        "password" => "root"
+        "username" => "",
+        "password" => ""
     ],
 ];
